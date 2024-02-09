@@ -1,0 +1,19 @@
+.home{
+    font-family: consolas;
+    .wrapper{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 3rem;
+        p{
+            text-wrap: pretty;
+        }
+    }
+   .link{
+    color: rgb(42, 186, 238);
+    text-decoration: underline;
+   }
+}
+@media (max-width: 35rem){
+
+}

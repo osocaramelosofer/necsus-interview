@@ -1,94 +1,26 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import "@/styles/home.scss"
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <main className="home">
+      <div className="wrapper">
+        <h2>
+          Hola, mi nombre es Fernando, soy full stack developer.
+        </h2>
+        <br />
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
+          El objetivo de esta pagina es resolver el examen para Desarrollador Front-End.
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <br />
+        <p>Opte por solucionarlo aqui, ya que era necesario desarrollar algunas cosas del <a href="/assets/examen.pdf" className="link" target="_blank">examen</a> como el componente <i>navbar</i> entre otras cosas.
+          (Por cierto, ese mismo componente que piden en la <Link className="link" href="/part4">parte 4</Link> ,es el mismo que esta usando esta pagina.)
+          <br />          
+        </p>
+        <br />
+        <p>Lo unico que me falto fue la parte del cv,debido a mis responsabilidades en mi actual trabajo no tuve tiempo suficiente para desarrollarlo. 
+          Pero dejo por aqui el link de <Link className="link" href="https://fernandos-portfolio.vercel.app/" target="_blank">mi portafolio personal</Link>
+        </p>
       </div>
     </main>
   );

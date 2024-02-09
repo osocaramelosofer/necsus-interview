@@ -1,0 +1,38 @@
+.part2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    h1{
+        text-align: center;
+    }
+    ul{
+        list-style-type: disc;
+        padding: 1rem;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div>button{
+            background-color: rgb(20, 158, 250);
+            border-radius: 1.7rem;
+            padding-block: .5rem;
+            padding-inline: .5rem;
+            max-width: 8rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 35rem){
+    .part2{
+        margin-top: 6rem;
+    }
+}
